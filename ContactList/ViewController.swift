@@ -13,7 +13,7 @@ class ViewController: UIViewController, UISearchDisplayDelegate, UISearchBarDele
     var tableData: [Contacts] = []
     var filteredData: [Contacts] = []
     
-    @IBOutlet weak var searchBar: UISearchBar!
+
     
     // obtain context container //
     let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -28,9 +28,6 @@ class ViewController: UIViewController, UISearchDisplayDelegate, UISearchBarDele
         performSegue(withIdentifier: "EditContactSegue", sender: addContactButton)
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    
-    }
 
     
     
